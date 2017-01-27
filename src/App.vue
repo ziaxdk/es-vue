@@ -1,9 +1,7 @@
 <template>
   <div class="window">
     <Tabs :showPlus="true"></Tabs>
-    <div class="window-content">
-      <Result :output="result" :indent="2"></Result>
-    </div>
+    <Results :right="result"></Results>
   </div>
 
 </template>
@@ -11,7 +9,7 @@
 <script>
 
 import Tabs from './components/Tabs/Tabs'
-import Result from './components/Result/Result'
+import Results from './components/Results/Results'
 
 import json from './components/Result/TEST.json';
 
@@ -22,9 +20,8 @@ export default {
     }
   },
   components: {
-    Tabs, Result
+    Tabs, Results
   },
 
 }
 </script>
-

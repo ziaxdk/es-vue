@@ -1,6 +1,6 @@
 <template>
   <div>
-  	<div id="result" class="editor"></div>
+  	<div id="editor" class="editor"></div>
   </div>
 </template>
 
@@ -11,39 +11,23 @@ var editor;
 
 export default {
 	props: {
-    output: {
-      type: String,
-      default: 'no data'
-    },
-    indent: {
-      type: Number,
-      default: 4
-    },
-    theme: {
-      type: String,
-      default: 'iplastic'
-    }
-  },
-  watch: {
-    output(val) {
-      this.update(val);
-    }
-  },
-  methods: {
-    update(val) {
-      editor.setValue(val, -1);
-    }
+	    indent: {
+	      type: Number,
+	      default: 4
+	    },
+	    theme: {
+	      type: String,
+	      default: 'iplastic'
+	    }
   },
   mounted() {
-    editor = ace.edit("result");
+    editor = ace.edit("editor");
     editor.setTheme("ace/theme/" + this.theme);
     editor.getSession().setMode("ace/mode/json");
     editor.getSession().setTabSize(this.indent);
-    editor.setReadOnly(true);
     editor.setDisplayIndentGuides(true);
     editor.setShowPrintMargin(false);
-
-    this.update(this.output);
+    editor.renderer.setShowGutter(false);
   }
 }
 
