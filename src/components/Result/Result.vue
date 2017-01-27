@@ -26,12 +26,12 @@ export default {
   },
   watch: {
     output(val) {
-      console.log('watch', val, editor);
+      this.update(val);
     }
   },
   methods: {
     update(val) {
-      editor.setValue(val);
+      editor.setValue(val, -1);
     }
   },
   // computed: {
