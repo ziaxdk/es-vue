@@ -7,7 +7,7 @@
           <Navs></Navs>
         </div>
         <div class="pane">
-          <Main></Main>
+          <Main :data="data"></Main>
         </div>
       </div>
     </div>
@@ -21,10 +21,18 @@ import Tabs from './components/Tabs/Tabs'
 import Navs from './components/Navs/Navs'
 import Main from './components/Main/Main'
 
+import json from './components/Main/ES.json';
+
 export default {
+  props: {
+    data: {
+      default: json
+    }
+  },
   components: {
     Tabs, Navs, Main
-  }
+  },
+
 }
 </script>
 

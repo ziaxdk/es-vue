@@ -1,0 +1,1213 @@
+{
+   "took": 16,
+   "timed_out": false,
+   "_shards": {
+      "total": 3,
+      "successful": 3,
+      "failed": 0
+   },
+   "hits": {
+      "total": 1535,
+      "max_score": 1,
+      "hits": [
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "179",
+            "_score": 1,
+            "_source": {
+               "uniText": "CALVIN KLEIN CK ONE DEOSTICK",
+               "itemNumber": 179,
+               "isOnlineOffer": false,
+               "campaigns": [
+                  "4F3PC"
+               ],
+               "brand": "CALVIN KLEIN",
+               "name": "CK ONE",
+               "type": "DEODORANT STICK",
+               "mainCategory": {
+                  "id": 30
+               },
+               "subCategory": {
+                  "id": 3025
+               },
+               "pictures": [
+                  "02227267.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 139,
+                        "retailPrice": 190
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 14,
+                        "retailPrice": 21
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 159,
+                        "retailPrice": 220
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 179,
+                        "retailPrice": 250
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 2
+               },
+               "variants": [],
+               "volume": "75 ml",
+               "volumeExt": {
+                  "text": "75 ml",
+                  "quantity": 75
+               },
+               "timestamp": "2017-01-27T08:27:05.6625168Z",
+               "rules": [
+                  {
+                     "startDate": "2010-04-19T00:00:00",
+                     "endDate": "2017-04-30T23:59:59.999",
+                     "values": [
+                        "+[D|D>D|D]",
+                        "+[D|D<D|D]",
+                        "+[D|D>D|T]",
+                        "+[D|D<D|T]",
+                        "+[D|T>D|D]",
+                        "+[D|T<D|D]",
+                        "+[D|T>D|T]",
+                        "+[D|T<D|T]"
+                     ]
+                  }
+               ],
+               "tabs": [
+                  {
+                     "header": "",
+                     "text": "Banebrydende og ikonisk duft der i 1994 fik hele verden til at stoppe op. I dag er Ck One en klassiker til både ham og hende – frisk, uden at være overdøvende og med velafbalancerede noter af mandarin, lemon, ananas, sandeltræ og grøn te."
+                  }
+               ],
+               "appUsages": [
+                  "Airshoppen",
+                  "Ort",
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "CALVIN KLEIN",
+                        "CK ONE",
+                        "179"
+                     ],
+                     "output": "CALVIN KLEIN",
+                     "payload": {
+                        "payloadId": "179",
+                        "type": 1,
+                        "product": {
+                           "picture": "02227267.png",
+                           "brand": "CALVIN KLEIN",
+                           "name": "CK ONE"
+                        }
+                     },
+                     "weight": 2
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "215",
+            "_score": 1,
+            "_source": {
+               "uniText": "MARES AQUA JR. SHOE SIZE  27-2",
+               "itemNumber": 215,
+               "isOnlineOffer": false,
+               "campaigns": [],
+               "brand": "MARES",
+               "name": "AQUAGRIP ",
+               "mainCategory": {
+                  "id": 50
+               },
+               "subCategory": {
+                  "id": 5065
+               },
+               "pictures": [
+                  "00018350.png",
+                  "00033705.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 139,
+                        "retailPrice": 299
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 17,
+                        "retailPrice": 40
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 149,
+                        "retailPrice": 399
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 159,
+                        "retailPrice": 399
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 1
+               },
+               "variants": [
+                  {
+                     "itemNumber": 215,
+                     "key": "Size",
+                     "value": "27-28"
+                  },
+                  {
+                     "itemNumber": 678,
+                     "key": "Size",
+                     "value": "29-30"
+                  },
+                  {
+                     "itemNumber": 9000,
+                     "key": "Size",
+                     "value": "31-32"
+                  },
+                  {
+                     "itemNumber": 9841,
+                     "key": "Size",
+                     "value": "33-34"
+                  }
+               ],
+               "volume": "",
+               "volumeExt": {
+                  "text": "",
+                  "quantity": 0
+               },
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "0001-01-01T00:00:00",
+                     "endDate": "9999-12-31T23:59:59.9999999",
+                     "values": [
+                        "+[D|D>D|D]",
+                        "+[D|D>D|T]",
+                        "+[D|T>D|T]",
+                        "+[D|T>D|D]",
+                        "+[D|D<D|D]",
+                        "+[D|D<D|T]",
+                        "+[D|T<D|T]",
+                        "+[D|T<D|D]"
+                     ]
+                  }
+               ],
+               "tabs": [
+                  {
+                     "header": "",
+                     "text": "Mares Aquagrip Junior er det perfekte letvægtsfodtøj til børn på stenede strande, omkring vandkanten eller ved poolen. Strandskoen er slidstærk og velegnet til windsurfing, aqua-jogging, snorkling og andre vandaktiviteter. Den har en robust gummisål og en behagelig overdel af net og jersey, der har velcrolukning og er hurtigttørrende."
+                  }
+               ],
+               "appUsages": [
+                  "Airshoppen",
+                  "Ort",
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "MARES",
+                        "AQUAGRIP ",
+                        "215"
+                     ],
+                     "output": "MARES",
+                     "payload": {
+                        "payloadId": "215",
+                        "type": 1,
+                        "product": {
+                           "picture": "00018350.png",
+                           "brand": "MARES",
+                           "name": "AQUAGRIP "
+                        }
+                     },
+                     "weight": 1
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "296",
+            "_score": 1,
+            "_source": {
+               "uniText": "NESTLÉ SMARTIES SNACKING BAG",
+               "itemNumber": 296,
+               "isOnlineOffer": false,
+               "campaigns": [],
+               "brand": "SMARTIES",
+               "name": "SMARTIES SNACKING BAG",
+               "mainCategory": {
+                  "id": 40
+               },
+               "subCategory": {
+                  "id": 4030
+               },
+               "pictures": [
+                  "02159089.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 29,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 4,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 39,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 34,
+                        "retailPrice": 0
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 1
+               },
+               "variants": [],
+               "volume": "180 gr",
+               "volumeExt": {
+                  "text": "180 gr",
+                  "quantity": 180
+               },
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "0001-01-01T00:00:00",
+                     "endDate": "9999-12-31T23:59:59.9999999",
+                     "values": [
+                        "+[D|D>D|D]",
+                        "+[D|D>D|T]",
+                        "+[D|T>D|T]",
+                        "+[D|T>D|D]",
+                        "+[D|D<D|D]",
+                        "+[D|D<D|T]",
+                        "+[D|T<D|T]",
+                        "+[D|T<D|D]"
+                     ]
+                  }
+               ],
+               "tabs": [
+                  {
+                     "header": "",
+                     "text": "Mælkechokolade med sprødt sukkerovertræk i små æsker. 100 % naturlige farver."
+                  }
+               ],
+               "appUsages": [
+                  "Airshoppen",
+                  "Ort",
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "SMARTIES",
+                        "SMARTIES SNACKING BAG",
+                        "296"
+                     ],
+                     "output": "SMARTIES",
+                     "payload": {
+                        "payloadId": "296",
+                        "type": 1,
+                        "product": {
+                           "picture": "02159089.png",
+                           "brand": "SMARTIES",
+                           "name": "SMARTIES SNACKING BAG"
+                        }
+                     },
+                     "weight": 1
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "311",
+            "_score": 1,
+            "_source": {
+               "uniText": "THE FAMOUS GROUSE BLEND 100 CL",
+               "itemNumber": 311,
+               "isOnlineOffer": false,
+               "campaigns": [],
+               "brand": "THE FAMOUS GROUSE",
+               "name": "SCOTCH WHISKY",
+               "mainCategory": {
+                  "id": 20
+               },
+               "subCategory": {
+                  "id": 2020
+               },
+               "pictures": [
+                  "02437591.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 119,
+                        "retailPrice": 249
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 19,
+                        "retailPrice": 42
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 149,
+                        "retailPrice": 500
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 169,
+                        "retailPrice": 399
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 44
+               },
+               "variants": [],
+               "volume": "1 liter",
+               "volumeExt": {
+                  "text": "1 liter",
+                  "quantity": 100
+               },
+               "alcoholPercentage": 40,
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "2015-05-15T00:00:00",
+                     "endDate": "2017-04-30T23:59:59.999",
+                     "values": [
+                        "-[C|DK:C|BUL]",
+                        "-[C|BUL:C|DK]",
+                        "-[C|DK:C|HR]",
+                        "-[C|HR:C|DK]",
+                        "+[C|DK:D|D]",
+                        "+[C|DK:D|T]",
+                        "+[D|D:C|DK]",
+                        "+[D|T:C|DK]",
+                        "-[C|FI:C|BUL]",
+                        "-[C|BUL:C|FI]",
+                        "-[C|FI:C|HR]",
+                        "-[C|HR:C|FI]",
+                        "+[C|FI:D|D]",
+                        "+[C|FI:D|T]",
+                        "+[D|D:C|FI]",
+                        "+[D|T:C|FI]",
+                        "-[C|SE:C|BUL]",
+                        "-[C|BUL:C|SE]",
+                        "-[C|SE:C|HR]",
+                        "-[C|HR:C|SE]",
+                        "+[C|SE:D|D]",
+                        "+[C|SE:D|T]",
+                        "+[D|D:C|SE]",
+                        "+[D|T:C|SE]",
+                        "+[C|NO:D|D]",
+                        "+[C|NO:D|T]",
+                        "+[D|D:C|NO]",
+                        "+[D|T:C|NO]"
+                     ]
+                  }
+               ],
+               "tabs": [
+                  {
+                     "header": "",
+                     "text": "Skotternes foretrukne whisky - og de ved, hvad de taler om! The Famous Grouse er fra det skotske højland og har været Skotlands favoritwhisky gennem mere end 30 år. Hemmeligheden bag succesen er måden hvorpå forskellige whiskyer sammensættes, heriblandt single malt fra Highland Park og The Macallan. Det giver en ekstraordinær blend, som efterfølgende lagres på egetræsfade. The Famous Grouse har en gyldenbrun farve og byder på bløde og afrundede duftnoter af malt, frugt og krydderier. Smagen har tydelige toner af citrus og vanilje samt et strejf af røg.<br />\n<br />\n<b>Land:</b> Skotland<br />\n<b>Type:</b> Blended Scotch Whisky"
+                  }
+               ],
+               "appUsages": [
+                  "Airshoppen",
+                  "Ort",
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "THE FAMOUS GROUSE",
+                        "SCOTCH WHISKY",
+                        "311"
+                     ],
+                     "output": "THE FAMOUS GROUSE",
+                     "payload": {
+                        "payloadId": "311",
+                        "type": 1,
+                        "product": {
+                           "picture": "02437591.png",
+                           "brand": "THE FAMOUS GROUSE",
+                           "name": "SCOTCH WHISKY"
+                        }
+                     },
+                     "weight": 44
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "312",
+            "_score": 1,
+            "_source": {
+               "uniText": "BARKNAP MINI",
+               "itemNumber": 312,
+               "isOnlineOffer": false,
+               "campaigns": [],
+               "brand": "ANTHON BERG",
+               "name": "EN STOR ÆSKE MED DE FINESTE CHOKOLADER FRA ANTHON BERG",
+               "mainCategory": {
+                  "id": 60
+               },
+               "subCategory": {
+                  "id": 6020
+               },
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2014-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 40,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2014-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 5,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2014-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 45,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2014-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 45,
+                        "retailPrice": 0
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 1
+               },
+               "variants": [],
+               "volume": "",
+               "volumeExt": {
+                  "text": "",
+                  "quantity": 0
+               },
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "0001-01-01T00:00:00",
+                     "endDate": "9999-12-31T23:59:59.9999999",
+                     "values": [
+                        "+[D|D>D|D]",
+                        "+[D|D>D|T]",
+                        "+[D|T>D|T]",
+                        "+[D|T>D|D]",
+                        "+[D|D<D|D]",
+                        "+[D|D<D|T]",
+                        "+[D|T<D|T]",
+                        "+[D|T<D|D]"
+                     ]
+                  }
+               ],
+               "tabs": [],
+               "appUsages": [
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "ANTHON BERG",
+                        "EN STOR ÆSKE MED DE FINESTE CHOKOLADER FRA ANTHON BERG",
+                        "312"
+                     ],
+                     "output": "ANTHON BERG",
+                     "payload": {
+                        "payloadId": "312",
+                        "type": 1,
+                        "product": {
+                           "brand": "ANTHON BERG",
+                           "name": "EN STOR ÆSKE MED DE FINESTE CHOKOLADER FRA ANTHON BERG"
+                        }
+                     },
+                     "weight": 1
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "323",
+            "_score": 1,
+            "_source": {
+               "uniText": "LEVEL SILVER 100S",
+               "itemNumber": 323,
+               "isOnlineOffer": false,
+               "campaigns": [],
+               "brand": "LEVEL",
+               "name": "LEVEL SMOOTH FLAVOUR 100'S",
+               "mainCategory": {
+                  "id": 10
+               },
+               "subCategory": {
+                  "id": 1010
+               },
+               "pictures": [
+                  "02476563.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 194,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 24,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 229,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 229,
+                        "retailPrice": 520
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 6
+               },
+               "variants": [],
+               "volume": "200 stk",
+               "volumeExt": {
+                  "text": "200 stk",
+                  "quantity": 200
+               },
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "2016-05-15T00:00:00",
+                     "endDate": "2017-04-30T23:59:59.999",
+                     "values": [
+                        "-[D|D>D|D]",
+                        "-[D|D<D|D]",
+                        "+[D|T>D|D]",
+                        "+[D|T<D|D]",
+                        "+[D|T>D|T]",
+                        "+[D|T<D|T]",
+                        "+[D|D>D|T]",
+                        "+[D|D<D|T]"
+                     ]
+                  }
+               ],
+               "tabs": [],
+               "appUsages": [
+                  "Airshoppen",
+                  "Ort",
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "LEVEL",
+                        "LEVEL SMOOTH FLAVOUR 100'S",
+                        "323"
+                     ],
+                     "output": "LEVEL",
+                     "payload": {
+                        "payloadId": "323",
+                        "type": 1,
+                        "product": {
+                           "picture": "02476563.png",
+                           "brand": "LEVEL",
+                           "name": "LEVEL SMOOTH FLAVOUR 100'S"
+                        }
+                     },
+                     "weight": 6
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "333",
+            "_score": 1,
+            "_source": {
+               "uniText": "OT JP CHENET CABERNET-SYRAH 3L",
+               "itemNumber": 333,
+               "isOnlineOffer": true,
+               "campaigns": [
+                  "ONLINEOFFERS"
+               ],
+               "brand": "J.P. CHENET",
+               "name": "RØDVIN",
+               "type": "BAG-IN-BOX",
+               "mainCategory": {
+                  "id": 20
+               },
+               "subCategory": {
+                  "id": 2010
+               },
+               "pictures": [
+                  "00021291.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-06-22T00:00:00",
+                        "endDate": "2017-01-04T23:59:59.999",
+                        "airshopPrice": 64,
+                        "retailPrice": 140
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-06-22T00:00:00",
+                        "endDate": "2017-01-04T23:59:59.999",
+                        "airshopPrice": 12,
+                        "retailPrice": 29
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-06-22T00:00:00",
+                        "endDate": "2017-01-04T23:59:59.999",
+                        "airshopPrice": 129,
+                        "retailPrice": 370
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-06-22T00:00:00",
+                        "endDate": "2017-01-04T23:59:59.999",
+                        "airshopPrice": 99,
+                        "retailPrice": 194
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 1
+               },
+               "variants": [],
+               "volume": "3 liter",
+               "volumeExt": {
+                  "text": "3 liter",
+                  "quantity": 300
+               },
+               "alcoholPercentage": 13,
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "2015-05-15T00:00:00",
+                     "endDate": "2017-04-30T23:59:59.999",
+                     "values": [
+                        "-[C|DK:C|BUL]",
+                        "-[C|BUL:C|DK]",
+                        "-[C|DK:C|HR]",
+                        "-[C|HR:C|DK]",
+                        "+[C|DK:D|D]",
+                        "+[C|DK:D|T]",
+                        "+[D|D:C|DK]",
+                        "+[D|T:C|DK]",
+                        "-[C|FI:C|BUL]",
+                        "-[C|BUL:C|FI]",
+                        "-[C|FI:C|HR]",
+                        "-[C|HR:C|FI]",
+                        "+[C|FI:D|D]",
+                        "+[C|FI:D|T]",
+                        "+[D|D:C|FI]",
+                        "+[D|T:C|FI]",
+                        "-[C|SE:C|BUL]",
+                        "-[C|BUL:C|SE]",
+                        "-[C|SE:C|HR]",
+                        "-[C|HR:C|SE]",
+                        "+[C|SE:D|D]",
+                        "+[C|SE:D|T]",
+                        "+[D|D:C|SE]",
+                        "+[D|T:C|SE]",
+                        "+[C|NO:D|D]",
+                        "+[C|NO:D|T]",
+                        "+[D|D:C|NO]",
+                        "+[D|T:C|NO]"
+                     ]
+                  }
+               ],
+               "tabs": [
+                  {
+                     "header": "",
+                     "text": "En middelfyldig rødvin fra det sydlige Frankrig med fyldig smag af urter, vilde bær, lakrids og vanilje. Vinen passer perfekt til svinekød, kalvekød, fjerkræ og lette ost.<br />\n<br />\n<b>Land:</b>  Frankrig<br />\n<b>Drue:</b>  70% Cabernet Sauvignon, 30% Syrah<br />\n<b>Serveringstemperatur:</b> 16-18 ºC"
+                  }
+               ],
+               "appUsages": [
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "J.P. CHENET",
+                        "RØDVIN",
+                        "333"
+                     ],
+                     "output": "J.P. CHENET",
+                     "payload": {
+                        "payloadId": "333",
+                        "type": 1,
+                        "product": {
+                           "picture": "00021291.png",
+                           "brand": "J.P. CHENET",
+                           "name": "RØDVIN"
+                        }
+                     },
+                     "weight": 1
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "354",
+            "_score": 1,
+            "_source": {
+               "uniText": "DRAMBUIE ORIGINAL",
+               "itemNumber": 354,
+               "isOnlineOffer": false,
+               "campaigns": [],
+               "brand": "DRAMBUIE",
+               "name": "DRAMBUIE",
+               "mainCategory": {
+                  "id": 60
+               },
+               "subCategory": {
+                  "id": 6020
+               },
+               "pictures": [
+                  "00019842.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 40,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 5,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 45,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 45,
+                        "retailPrice": 0
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 1
+               },
+               "variants": [],
+               "volume": "5 cl",
+               "volumeExt": {
+                  "text": "5 cl",
+                  "quantity": 5
+               },
+               "alcoholPercentage": 40,
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "2009-05-10T00:00:00",
+                     "endDate": "2017-04-30T23:59:59.999",
+                     "values": [
+                        "+[D|D>D|D]",
+                        "+[D|D<D|D]",
+                        "+[D|D>D|T]",
+                        "+[D|D<D|T]",
+                        "+[D|T>D|D]",
+                        "+[D|T<D|D]",
+                        "+[D|T>D|T]",
+                        "+[D|T<D|T]"
+                     ]
+                  }
+               ],
+               "tabs": [],
+               "appUsages": [
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "DRAMBUIE",
+                        "DRAMBUIE",
+                        "354"
+                     ],
+                     "output": "DRAMBUIE",
+                     "payload": {
+                        "payloadId": "354",
+                        "type": 1,
+                        "product": {
+                           "picture": "00019842.png",
+                           "brand": "DRAMBUIE",
+                           "name": "DRAMBUIE"
+                        }
+                     },
+                     "weight": 1
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "363",
+            "_score": 1,
+            "_source": {
+               "uniText": "OT M. KORS FIJI SOLBRILLE",
+               "itemNumber": 363,
+               "isOnlineOffer": true,
+               "campaigns": [
+                  "ONLINEOFFERS"
+               ],
+               "brand": "MICHAEL KORS",
+               "name": "FIJI",
+               "type": "DAMESOLBRILLE",
+               "mainCategory": {
+                  "id": 50
+               },
+               "subCategory": {
+                  "id": 5035
+               },
+               "pictures": [
+                  "02099262.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-06-30T00:00:00",
+                        "endDate": "2017-01-20T23:59:59.999",
+                        "airshopPrice": 995,
+                        "retailPrice": 2075
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-06-30T00:00:00",
+                        "endDate": "2017-01-20T23:59:59.999",
+                        "airshopPrice": 135,
+                        "retailPrice": 240
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-06-30T00:00:00",
+                        "endDate": "2017-01-20T23:59:59.999",
+                        "airshopPrice": 1095,
+                        "retailPrice": 2150
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-06-30T00:00:00",
+                        "endDate": "2017-01-20T23:59:59.999",
+                        "airshopPrice": 1095,
+                        "retailPrice": 2395
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 1
+               },
+               "variants": [],
+               "volume": "",
+               "volumeExt": {
+                  "text": "",
+                  "quantity": 0
+               },
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "0001-01-01T00:00:00",
+                     "endDate": "9999-12-31T23:59:59.9999999",
+                     "values": [
+                        "+[D|D>D|D]",
+                        "+[D|D>D|T]",
+                        "+[D|T>D|T]",
+                        "+[D|T>D|D]",
+                        "+[D|D<D|D]",
+                        "+[D|D<D|T]",
+                        "+[D|T<D|T]",
+                        "+[D|T<D|D]"
+                     ]
+                  }
+               ],
+               "tabs": [
+                  {
+                     "header": "",
+                     "text": "Disse feminine solbriller er ganske enkelt et must-have fra Michael Kors. Med kædelignende detaljer på stængerne er de en nyfortolkning af designelementer fra den populære taske Hamilton. Fiji er det moderne bud på det ikoniske aviator design med en robust pasform, let metalstel og glas, der giver 100% UV-beskyttelse. Etui medfølger.<br />\n<br />\n<b>Model:</b> MK1003-100213<br />\n<b>Str:</b> 58"
+                  }
+               ],
+               "appUsages": [
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "MICHAEL KORS",
+                        "FIJI",
+                        "363"
+                     ],
+                     "output": "MICHAEL KORS",
+                     "payload": {
+                        "payloadId": "363",
+                        "type": 1,
+                        "product": {
+                           "picture": "02099262.png",
+                           "brand": "MICHAEL KORS",
+                           "name": "FIJI"
+                        }
+                     },
+                     "weight": 1
+                  }
+               }
+            }
+         },
+         {
+            "_index": "winter2017-tcas-da-02",
+            "_type": "product",
+            "_id": "368",
+            "_score": 1,
+            "_source": {
+               "uniText": "NESTLÉ AFTER EIGHT DUO PACK",
+               "itemNumber": 368,
+               "isOnlineOffer": false,
+               "campaigns": [],
+               "brand": "NESTLÉ",
+               "name": "AFTER EIGHT",
+               "type": "2 PAK",
+               "mainCategory": {
+                  "id": 40
+               },
+               "subCategory": {
+                  "id": 4010
+               },
+               "pictures": [
+                  "02279046.png"
+               ],
+               "prices": {
+                  "DKK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 69,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "EUR": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 7.5,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "NOK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 89,
+                        "retailPrice": 0
+                     }
+                  ],
+                  "SEK": [
+                     {
+                        "startDate": "2016-11-01T00:00:00",
+                        "endDate": "2017-04-30T23:59:59.999",
+                        "airshopPrice": 89,
+                        "retailPrice": 0
+                     }
+                  ]
+               },
+               "scoreStats": {
+                  "soldCount": 1
+               },
+               "variants": [],
+               "volume": "800 gr",
+               "volumeExt": {
+                  "text": "800 gr",
+                  "quantity": 800
+               },
+               "timestamp": "2017-01-27T08:27:05.6781353Z",
+               "rules": [
+                  {
+                     "startDate": "0001-01-01T00:00:00",
+                     "endDate": "9999-12-31T23:59:59.9999999",
+                     "values": [
+                        "+[D|D>D|D]",
+                        "+[D|D>D|T]",
+                        "+[D|T>D|T]",
+                        "+[D|T>D|D]",
+                        "+[D|D<D|D]",
+                        "+[D|D<D|T]",
+                        "+[D|T<D|T]",
+                        "+[D|T<D|D]"
+                     ]
+                  }
+               ],
+               "tabs": [
+                  {
+                     "header": "",
+                     "text": "Konfektchokolade som består af mintfondant overtrukket med fyldig mørk chokolade."
+                  }
+               ],
+               "appUsages": [
+                  "Airshoppen",
+                  "Ort",
+                  "OrtSantize"
+               ],
+               "maxQuantity": 99,
+               "suggesters": {
+                  "airshoppen": {
+                     "input": [
+                        "NESTLÉ",
+                        "AFTER EIGHT",
+                        "368"
+                     ],
+                     "output": "NESTLÉ",
+                     "payload": {
+                        "payloadId": "368",
+                        "type": 1,
+                        "product": {
+                           "picture": "02279046.png",
+                           "brand": "NESTLÉ",
+                           "name": "AFTER EIGHT"
+                        }
+                     },
+                     "weight": 1
+                  }
+               }
+            }
+         }
+      ]
+   }
+}
