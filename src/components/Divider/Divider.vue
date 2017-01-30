@@ -40,7 +40,7 @@ export default {
 <style scoped>
   .divider {
     cursor: ew-resize;
-    width: 16px;
+    width: 4px;
     background-color: #eee;
   }
 </style>
