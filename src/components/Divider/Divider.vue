@@ -1,5 +1,5 @@
 <template>
-  <div class="divider" v-on:mousedown="down"  v-on:mouseup="up">
+  <div class="divider" @mousedown="down">
   </div>
 </template>
 
@@ -7,20 +7,30 @@
 
 export default {
   props: {
-    leftSize: {
-      type: String
-    },
-    rightSize: {
-      type: String
+    value: {
+      type: Number
     }
+  },
+  mounted() {
+    document.addEventListener('mousemove', this.update);
+    document.addEventListener('mouseup', this.up);
+  },
+  destroyed() {
+    document.removeEventListener('mousemove', this.update);
+    document.removeEventListener('mouseup', this.up);
+
   },
   methods: {
     down() {
-      this.leftSize = '20%'
-      this.rightSize = '80%'
+      this._isPressed = true;
     },
     up() {
-      console.log('up');
+      this._isPressed = false;
+    },
+    update(value) {
+      if (!!this._isPressed) {
+        this.$emit('input', value.screenX);
+      }
     }
   }
 }
@@ -30,7 +40,7 @@ export default {
 <style scoped>
   .divider {
     cursor: ew-resize;
-    width: 10px;
+    width: 16px;
     background-color: #eee;
   }
 </style>

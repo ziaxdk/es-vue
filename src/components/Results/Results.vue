@@ -1,13 +1,13 @@
 <template>
   <div class="window-content">
 
-    <div class="flex-item" v-bind:style="{ width: leftSize }">
+    <div class="flex-item" v-bind:style="{ width: leftSize + 'px' }">
       <Editor :theme="'tomorrow'"></Editor>
     </div>
 
-    <Divider :left="leftSize" right="rightSize"></Divider>
+    <Divider v-model="leftSize"></Divider>
 
-    <div class="flex-item" v-bind:style="{ width: rightSize }">
+    <div class="flex-item" v-bind:style="{ width: rightSize + 'px' }">
       <Result :output="right" :indent="2"></Result>
     </div>
 
@@ -23,13 +23,23 @@ import Divider from '../Divider/Divider'
 export default {
   data() {
     return {
-      leftSize: '40%',
-      rightSize: '60%'
+      leftSize: 0
     }
+  },
+  mounted() {
+    var width = this.$el.clientWidth;
+    this.leftSize = Math.floor(width * 0.35);
+    this.rightSize = width - this.leftSize;
+    this._size = width;
   },
   props: {
     right: {
       type: String
+    }
+  },
+  computed: {
+    rightSize: function() {
+      return this._size - this.leftSize;
     }
   },
   components: {
