@@ -8,7 +8,7 @@
     <Divider v-model="leftSize"></Divider>
 
     <div class="flex-item" v-bind:style="{ width: rightSize + 'px' }">
-      <Result :output="right" :indent="2"></Result>
+      <Result :output="result" :indent="2"></Result>
     </div>
 
   </div>
@@ -20,10 +20,13 @@ import Editor from '../Editor/Editor'
 import Result from '../Result/Result'
 import Divider from '../Divider/Divider'
 
+import json from '../Result/ES.json';
+
 export default {
   data() {
     return {
-      leftSize: 0
+      leftSize: 0,
+      result: JSON.stringify(json, null, '\t')
     }
   },
   mounted() {
@@ -31,11 +34,6 @@ export default {
     this.leftSize = Math.floor(width * 0.35);
     this.rightSize = width - this.leftSize;
     this._size = width;
-  },
-  props: {
-    right: {
-      type: String
-    }
   },
   computed: {
     rightSize: function() {
