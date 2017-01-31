@@ -33,6 +33,11 @@ export default {
     cursor: ew-resize;
     width: 4px;
     background-color: #eee;
+
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
   }
   .divider:hover {
     background-color: #ccc;

@@ -11,7 +11,7 @@
 import Tabs from './components/Tabs/Tabs'
 import Results from './components/Results/Results'
 
-import json from './components/Result/TEST.json';
+import json from './components/Result/ES.json';
 
 export default {
   data() {
