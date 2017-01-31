@@ -18,7 +18,7 @@ export default {
     },
     up() {
       document.removeEventListener('mousemove', this.update);
-      document.addEventListener('mouseup', this.up);
+      document.removeEventListener('mouseup', this.up);
     },
     update(value) {
       this.$emit('input', value.screenX);
@@ -31,7 +31,7 @@ export default {
 <style scoped>
   .divider {
     cursor: ew-resize;
-    width: 4px;
+    width: 8px;
     background-color: #eee;
 
     -moz-transition: all .2s ease-in;

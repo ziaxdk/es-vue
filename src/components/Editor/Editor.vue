@@ -21,6 +21,10 @@ export default {
 	    }
   },
   mounted() {
+    var langTools = ace.require('ace/ext/language_tools');
+    var aceUtils = ace.require('ace/autocomplete/util');
+    var aceAutoComplete = ace.require('ace/autocomplete');
+
     editor = ace.edit("editor");
     editor.setTheme("ace/theme/" + this.theme);
     editor.getSession().setMode("ace/mode/json");
@@ -28,6 +32,21 @@ export default {
     editor.setDisplayIndentGuides(true);
     editor.setShowPrintMargin(false);
     editor.renderer.setShowGutter(false);
+
+    // editor.setOptions({
+    //   // enableBasicAutocompletion: true
+    //   enableBasicAutocompletion: true,
+    //   enableSnippets: true,
+    //   enableLiveAutocompletion: true
+    // });
+    // var completer = {
+    //   getCompletions: function(editor, session, pos, prefix, callback) {
+    //     console.log(arguments)
+    //     if (prefix.length === 0) return callback(null, []);
+    //     callback(null, [ {name: 'test', value: 'test', score: 100, meta: "rhyme"} ]);
+    //   }
+    // }
+    // langTools.addCompleter(completer);
   }
 }
 

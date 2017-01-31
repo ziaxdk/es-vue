@@ -1,13 +1,13 @@
 <template>
   <div class="window-content">
 
-    <div class="flex-item" v-bind:style="{ width: leftSize + 'px' }">
+    <div class="flex-item" :style="{ width: leftSize + 'px' }">
       <Editor :theme="'tomorrow'"></Editor>
     </div>
 
     <Divider v-model="leftSize"></Divider>
 
-    <div class="flex-item" v-bind:style="{ width: rightSize + 'px' }">
+    <div class="flex-item" :style="{ width: rightSize + 'px' }">
       <Result :output="result" :indent="2"></Result>
     </div>
 
