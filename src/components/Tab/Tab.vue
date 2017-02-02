@@ -1,6 +1,7 @@
 <template>
   <div class="tab-item active" :title="data.uri">
     <span class="icon icon-cancel icon-close-tab"></span>
+    <span class="icon icon-record" style="color:#34c84a"></span>
     <span>{{data.name}}</span>
   </div>
 </template>

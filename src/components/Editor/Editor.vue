@@ -15,14 +15,18 @@ export default {
     }
   },
 	props: {
-	    indent: {
-	      type: Number,
-	      default: 4
-	    },
-	    theme: {
-	      type: String,
-	      default: 'iplastic'
-	    }
+    indent: {
+      type: Number,
+      default: 4
+    },
+    theme: {
+      type: String,
+      default: 'iplastic'
+    },
+    executeKey: {
+      type: String,
+      required: true
+    }
   },
   mounted() {
     var langTools = ace.require('ace/ext/language_tools');
@@ -31,6 +35,7 @@ export default {
 
     let editor = ace.edit("editor");
     this.editor = editor;
+    editor.$blockScrolling = Infinity;
     editor.setTheme("ace/theme/" + this.theme);
     editor.getSession().setMode("ace/mode/json");
     editor.getSession().setTabSize(this.indent);
@@ -58,7 +63,7 @@ export default {
     editor.commands.addCommand({
       name: "runQuery",
       // bindKey: {win: "Ctrl-Alt-h", mac: "Command-Alt-h"},
-      bindKey: { win: "f6", mac: "f6" },
+      bindKey: { win: this.executeKey, mac: this.executeKey },
       exec: this.runQuery
     });
   },

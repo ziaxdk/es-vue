@@ -2,13 +2,19 @@
   <div class="window-content">
 
     <div class="flex-item" :style="{ width: leftSize + 'px' }">
-      <Editor :theme="'tomorrow'" @onExecute="OnExecute"></Editor>
+      <Editor
+        :theme="'tomorrow'"
+        :executeKey="executeKey"
+        @onExecute="OnExecute"></Editor>
     </div>
 
     <Divider v-model="leftSize"></Divider>
 
     <div class="flex-item" :style="{ width: rightSize + 'px' }">
-      <Result :output="result" :indent="2"></Result>
+      <Result
+        :output="result"
+        :indent="2"
+        :executeKey="executeKey"></Result>
     </div>
 
   </div>
@@ -26,12 +32,16 @@ export default {
     activeHost: {
       type: Object,
       required: true
+    },
+    executeKey: {
+      type: String,
+      required: true
     }
   },
   data() {
     return {
       leftSize: 0,
-      result: '{"no": "data"}'
+      result: '{ "no": "data yet. Hit \'' + this.executeKey.toUpperCase() + '\'" }'
     }
   },
   mounted() {

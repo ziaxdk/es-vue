@@ -36,6 +36,7 @@ export default {
   },
   mounted() {
     editor = ace.edit("result");
+    editor.$blockScrolling = Infinity;
     editor.setTheme("ace/theme/" + this.theme);
     editor.getSession().setMode("ace/mode/json");
     editor.getSession().setTabSize(this.indent);

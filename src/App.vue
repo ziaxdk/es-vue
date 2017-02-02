@@ -1,7 +1,7 @@
 <template>
   <div class="window">
     <Tabs :showPlus="true" :tabs="tabs"></Tabs>
-    <Results :activeHost="activeTab"></Results>
+    <Results :activeHost="activeTab" :executeKey="executeKey"></Results>
   </div>
 
 </template>
@@ -15,8 +15,9 @@ export default {
   data() {
     return {
       tabs: [
-        { uri: 'http://localhost:9200', name: 'local' }
-      ]
+        { uri: 'http://localhost:9200', name: 'localhost' }
+      ],
+      executeKey: 'f6'
     }
   },
   computed:{
