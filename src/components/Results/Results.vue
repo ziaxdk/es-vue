@@ -2,7 +2,7 @@
   <div class="window-content">
 
     <div class="flex-item" :style="{ width: leftSize + 'px' }">
-      <Editor :theme="'tomorrow'"></Editor>
+      <Editor :theme="'tomorrow'" @onResult="OnResult"></Editor>
     </div>
 
     <Divider v-model="leftSize"></Divider>
@@ -38,6 +38,12 @@ export default {
   computed: {
     rightSize: function() {
       return this._size - this.leftSize;
+    }
+  },
+  methods: {
+    OnResult(data) {
+      console.log('OnResult', data);
+      this.result = JSON.stringify(data, null, '\t')
     }
   },
   components: {

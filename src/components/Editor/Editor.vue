@@ -7,9 +7,15 @@
 <script>
 // import { pretty } from 'js-object-pretty-print'
 // import ace from 'ace-code-editor'
-var editor;
+
+import { run } from '../../store.js'
 
 export default {
+  data() {
+    return {
+      editor: null
+    }
+  },
 	props: {
 	    indent: {
 	      type: Number,
@@ -25,7 +31,8 @@ export default {
     var aceUtils = ace.require('ace/autocomplete/util');
     var aceAutoComplete = ace.require('ace/autocomplete');
 
-    editor = ace.edit("editor");
+    let editor = ace.edit("editor");
+    this.editor = editor;
     editor.setTheme("ace/theme/" + this.theme);
     editor.getSession().setMode("ace/mode/json");
     editor.getSession().setTabSize(this.indent);
@@ -47,6 +54,21 @@ export default {
     //   }
     // }
     // langTools.addCompleter(completer);
+
+    editor.setValue('GET /');
+
+    editor.commands.addCommand({
+      name: "runQuery",
+      // bindKey: {win: "Ctrl-Alt-h", mac: "Command-Alt-h"},
+      bindKey: { win: "f6", mac: "f6" },
+      exec: this.runQuery
+    });
+  },
+  methods: {
+    async runQuery() {
+      let result = await run(this.editor.getValue());
+      this.$emit('onResult', result);
+    }
   }
 }
 
