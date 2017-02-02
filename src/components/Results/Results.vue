@@ -2,7 +2,7 @@
   <div class="window-content">
 
     <div class="flex-item" :style="{ width: leftSize + 'px' }">
-      <Editor :theme="'tomorrow'" @onResult="OnResult"></Editor>
+      <Editor :theme="'tomorrow'" @onExecute="OnExecute"></Editor>
     </div>
 
     <Divider v-model="leftSize"></Divider>
@@ -19,14 +19,19 @@
 import Editor from '../Editor/Editor'
 import Result from '../Result/Result'
 import Divider from '../Divider/Divider'
-
-import json from '../Result/ES.json';
+import { run } from '../../store.js'
 
 export default {
+  props: {
+    activeHost: {
+      type: Object,
+      required: true
+    }
+  },
   data() {
     return {
       leftSize: 0,
-      result: JSON.stringify(json, null, '\t')
+      result: '{"no": "data"}'
     }
   },
   mounted() {
@@ -41,9 +46,9 @@ export default {
     }
   },
   methods: {
-    OnResult(data) {
-      console.log('OnResult', data);
-      this.result = JSON.stringify(data, null, '\t')
+    async OnExecute(data) {
+      let result = await run(this.activeHost.uri, data);
+      this.result = JSON.stringify(result, null, '\t')
     }
   },
   components: {

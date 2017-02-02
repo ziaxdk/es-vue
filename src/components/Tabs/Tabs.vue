@@ -1,7 +1,7 @@
 <template>
 <div class="tab-group">
-  <Tab></Tab>
-  <div class="tab-item tab-item-fixed" v-if="showPlus">
+  <Tab v-for="tab in tabs" :data="tab"></Tab>
+  <div class="tab-item tab-item-fixed" v-if="showPlus" @click="newTab">
     <span class="icon icon-plus"></span>
   </div>
 </div>
@@ -17,6 +17,14 @@ export default {
     showPlus: {
       type: Boolean,
       default: false
+    },
+    tabs: {
+      type: Array
+    }
+  },
+  methods: {
+    newTab() {
+      console.log('new');
     }
   },
 	components: {

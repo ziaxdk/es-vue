@@ -1,7 +1,7 @@
 <template>
-  <div class="tab-item">
+  <div class="tab-item active" :title="data.uri">
     <span class="icon icon-cancel icon-close-tab"></span>
-    Tab active
+    <span>{{data.name}}</span>
   </div>
 </template>
 
@@ -10,8 +10,8 @@
 
 export default {
 	props: {
-		title: {
-			type: String
+		data: {
+			type: Object
 		}
 	}
 }

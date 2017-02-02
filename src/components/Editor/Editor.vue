@@ -8,8 +8,6 @@
 // import { pretty } from 'js-object-pretty-print'
 // import ace from 'ace-code-editor'
 
-import { run } from '../../store.js'
-
 export default {
   data() {
     return {
@@ -55,7 +53,7 @@ export default {
     // }
     // langTools.addCompleter(completer);
 
-    editor.setValue('GET /');
+    editor.setValue('GET /_search');
 
     editor.commands.addCommand({
       name: "runQuery",
@@ -65,9 +63,8 @@ export default {
     });
   },
   methods: {
-    async runQuery() {
-      let result = await run(this.editor.getValue());
-      this.$emit('onResult', result);
+    runQuery() {
+      this.$emit('onExecute', this.editor.getValue());
     }
   }
 }
